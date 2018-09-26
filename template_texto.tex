@@ -350,6 +350,26 @@ Em certos modelos de processo de software apenas parte do ciclo de vida é cícl
 
 Os benefícios de uma desativação menos agressiva vão além do tempo poupado e menor prejuízo relacionados aos custos. Em cada ciclo temos documentações relacionadas aos artefatos, versionamentos e informação gerada através dos feedbacks. Ou seja, mesmo após um acontecimento inesperado ou negativo, os dados coletados de ciclos prévios irão enriquecer de forma positiva a base histórica da empresa que implementa o processo. 
 
+\section{Métricas}
+Através das métricas será possível analisar o trabalho dos Squads e a estabilidade dos sistemas desenvolvidos. As métricas adotadas serão:
+\begin{itemize}
+	\item \textbf{Horas planejadas para itens da Sprint (HPS):} horas totais de trabalho do Squad na Sprint. Esse valor deve ser decidido no momento do planejamento, de acordo com a disponibilidade diária de seus integrantes. Medido por Sprint.
+	\item \textbf{Pontos planejados de itens da Sprint (PPS):} soma dos pontos de complexidade estimados para a Sprint durante o planejamento. Medido por Sprint.
+	\item \textbf{Pontos realizados de itens da Sprint (PRS):} oma dos pontos de complexidade dos itens completamente realizados na Sprint. Medido por Sprint. 
+	\item \textbf{Horas trabalhadas em itens emergenciais (HTE):} horas totais trabalhadas em correções e emergenciais durante a Sprint. Medido por Sprint.
+	\item \textbf{Chamados abertos (CA):} número de chamados totais causados por erros ou falhas do sistema já implantado. Medido mensalmente.
+	\item \textbf{Quantidade de clientes (QC):} número total de clientes do sistema. Medido mensalmente.
+\end{itemize}	
+
+\section{Histórico}
+Utilizando os dados de métricas, podemos visualizar de forma mais clara a eficiência nas entregas de um Squad e da equipe de desenvolvimento como um todo. Estes dados históricos poderão ser analisados individualmente ou comparados com dados anteriores, seja usando gráficos ou média. Para acompanhar as informações de forma temporal, serão gerados os seguintes indicadores:
+
+\begin{itemize}
+	\item \textbf{Velocidade do Squad:} indica a eficiência do resultado em relação aos itens planejados. Esse valor poderá ser utilizado pelo Agile Coach para melhoras as estimativas futuras. É medido como horas/ponto e sua fórmula é: HPS/PRS.
+	\item \textbf{Precisão do Squad:} indica a precisão na estimativa dos pontos e planejamento da Sprint. É medido como uma porcentagem e sua fórmula é:  PPS/PRS.
+	\item \textbf{Retrabalho:} mostra o índice de retrabalho gerado por problemas no software em relação ao tempo de trabalho. É medido como uma porcentagem e sua fórmula é: HTE/HPS.
+	\item \textbf{Incidência de erros:} mostra o índice de incidência dos erros em relação ao número de clientes. Medido em porcentagem e sua fórmula é: CA/QC.
+\end{itemize}
 
 \clearpage
 \section{Referências Bibliograficas}
