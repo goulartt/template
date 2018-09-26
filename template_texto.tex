@@ -96,7 +96,7 @@
 %% ====================================
 %% ====================================
 
-\title{Modelo para Relatório individual e projeto}					% Title of your article goes here
+\title{Modelo de Processo Ágil Projeto X}					% Title of your article goes here
 
 %% ====================================
 
@@ -133,7 +133,7 @@
 %% mude o resumo  do projeto
 %% ====================================
 %% ====================================
-\initial{E}\textbf{ste modelo deve ser utilizado para entrega de relatório individual e projeto. Coloque aqui o resumo do projeto}
+\initial{E}\textbf{ste modelo de processo de software apresenta uma metologia de desenvolvimento ágil e cíclico para pequenos times de desenvolvimento com foco em projetos SaaS.}
 
 %% ====================================
 \begin{figure}
@@ -165,29 +165,69 @@
 %% ====================================
 %% ====================================
 \section{Introdução}
-A estrutura poderá ou deverá ser modificada, de acordo com o projeto, entretanto na introdução coloque:
+O modelo de processo de software apresentado neste documento é de estrutura ágil para equipes pequenas com projetos de empresas que tenham Software as a Service (SaaS). A proposta desse modelo é a autonomia do time de desenvolvimento e a visibilidade que cada desenvolvedor tem dentro do projeto, tudo isso contido dentro de um ciclo de desenvolvimento rápido e eficaz.
 
 \begin{itemize}
-	\item uma descrição mais detalhada do projeto;
-	\item o nome do projeto;
-	\item o nome dos integrantes;
-	\item o endereço no github;
+	\item Projeto X (Definir nome);
+	\item Integrantes: Breno Angelotti; Gabriel Romero; Jean Carlos Gonçalves; João Victor Goulart de Almeida; Mateus Merscher; Renan Batel.
+	\item Github: https://github.com/goulartt/template;
 \end{itemize}
 
 
 \section{Processo}
-Descreva aqui o processo utilizado.
+O modelo de processo de software desenvolvido é de categoria ágil com ciclo de vida cíclico. O foco desse processo é desenvolver de forma rápida, e dando autonomia para equipe de desenvolvimento, ideal para empresas que contenham SaaS e várias equipes pequenas (squads) de desenvolvimento.
 
-\subsection{Papeis}
-Explique e enumere os papeis (roles) do processo.
+\subsection{Papéis}
+O ideal para utilização desse modelo é uma equipe de 5 a 7 pessoas, sendo que toda equipe deve conter um Customer (cliente), um Agile Coach, um Product Owner, uma equipe de desenvolvimento e um Line Manager (Opcional), cuja suas respectivas funções são: 
+\begin{itemize}
+	\item \textbf{Customer}: Aquele que irá ditar o que será entregue.
+	\item \textbf{Agile Coach}: Ajuda a manter o fluxo de trabalho, facilitando as retrospectivas, as reuniões de planejamento do ciclo, organizar a equipe de desenvolvimento e garantir a entrega prevista do ciclo. 
+	
+	\item \textbf{Product Owner}: Responsável pelo backlog e define prioridades das histórias, se comunicando diretamente com os stakeholders e apresentar ao cliente o andar do desenvolvimento do software. 
+	
+	\item \textbf{Squad}: Desenvolvedores responsáveis por um conjunto de funcionalidades. 
+	
+	\item \textbf{Line Manager}: responsável por no máximo 5 squads, irá alinhar com as equipes o que está sendo feito, participará em algumas reuniões para acompanhamento do squad sem influenciar no processo. Responsável pelo coaching e desenvolvimento de carreira individual de cada membro dos squads. Acompanha reclamações e problemas para criar planos de ação que melhorem o processo. 
+\end{itemize}
 
 \subsection{Atividades}
-Enumere e explique cada uma das atividades, relacione com os papéis.
+Em atividades do processo relacionadas aos papeis temos: 
+\begin{itemize}
+	\item \textbf{Especificação de requisitos}: levantar os requisitos com o cliente (Product Owner); 
+	
+	\item \textbf{Construção da história}: criar as histórias baseadas nos requisitos (Product Owner);  
+	
+	\item \textbf{Definição de backlogs e prioridades}: montar o backlog e definir as prioridades dos itens (Product Owner); 
+	
+	\item \textbf{Manter fluxo}: manter o fluxo das sprints e ajudar equipe de desenvolvimento (Agile Coach); 
+	
+	\item \textbf{Planejamento de Sprint}: definição de itens e duração da sprint (Agile Coach e Squad); 
+	
+	\item \textbf{Implementação da Sprint}: desenvolver os itens da sprint no tempo planejado (Squad); 
+	
+	\item \textbf{Correções}: tempo alocado da equipe para resolver casos emergenciais não previstos (Squad); 
+	
+	\item \textbf{Criação dos casos de teste}: os casos de teste são especificados e registrados de forma rastreável aos requisitos e então são agrupados de acordo com cada função. (Squad) 
+	
+	\item \textbf{Construção dos testes}: os scripts de automação são criados; (Squad) 
+	
+	\item \textbf{Execução dos testes}: os testes são executados nos ambientes necessários; (Squad) 
+	
+	\item \textbf{Validação}: os resultados dos testes são analisados e o pacote é enviado para release caso não haja falhas; (Squad) 
+	
+	\item \textbf{Documentação dos artefatos}: os artefatos da sprint são registrados (P.O, Agile Coach, Squad); 
+	
+	\item \textbf{Versionamento}: os artefatos são versionados (P.O, Agile Coach, Squad); 
+	
+	\item \textbf{Implantação}: o pacote é enviado para produção, se necessário (Squad); 
+	
+	\item \textbf{Análise e priorização da manutenção}: o relatório de registro de erros é analisado e as ações/correções são priorizadas (Agile Coach); 
+\end{itemize}
 
 
 \section{Execução do projeto}
 
-Relacione as atividades com os integrantes, crie um cronograma conforme orientações
+Relacione as atividades com os integrantes, crie um cronograma conformed orientações
 \subsection{Backlog e sprints}
 -- item obrigatório --
 
