@@ -149,11 +149,6 @@
     \renewcommand*\listfigurename{Lista de figuras}
 \listoffigures
 
-\renewcommand*\listtablename{Lista de tabelas}
-\listoftables
-
-
-
 
 \clearpage
 \renewcommand{\contentsname}{Sumário}
@@ -166,7 +161,7 @@
 %% ====================================
 %% ====================================
 \section{Introdução}
-O modelo de processo de software apresentado neste documento é de estrutura ágil para equipes pequenas com projetos de empresas que tenham Software as a Service (SaaS). A proposta desse modelo é a autonomia do time de desenvolvimento e a visibilidade que cada desenvolvedor tem dentro do projeto, tudo isso contido dentro de um ciclo de desenvolvimento rápido e eficaz.
+O modelo de processo de software apresentado neste documento é de estrutura ágil para equipes pequenas com projetos de empresas que tenham Software as a Service (SaaS)\cite{saas}. A proposta desse modelo é a autonomia do time de desenvolvimento e a visibilidade que cada desenvolvedor tem dentro do projeto, tudo isso contido dentro de um ciclo de desenvolvimento rápido e eficaz.
 
 \begin{itemize}
 	\item Modelo de Processo Ágil BJR;
@@ -176,7 +171,7 @@ O modelo de processo de software apresentado neste documento é de estrutura ág
 
 
 \section{Processo}
-O modelo de processo de software desenvolvido é de categoria ágil com ciclo de vida cíclico. O foco desse processo é desenvolver de forma rápida, e dando autonomia para equipe de desenvolvimento, ideal para empresas que contenham SaaS e várias equipes pequenas (squads) de desenvolvimento.
+O modelo de processo de software desenvolvido é de categoria ágil com ciclo de vida cíclico. O foco desse processo é desenvolver de forma rápida, e dando autonomia para equipe de desenvolvimento, ideal para empresas que contenham SaaS e várias equipes pequenas (squads) \cite{spotify}  de desenvolvimento.
 
 \subsection{Fases}
 	\subsubsection{Levantamento de Requisitos}
@@ -208,7 +203,7 @@ O ideal para utilização desse modelo é uma equipe de 5 a 7 pessoas, sendo que
 	\item \textbf{Customer}: O cliente tem o papel principal para o processo ocorrer, ele será o responsável por ditar o produto/serviço que será desenvolvido.
 	\item \textbf{Agile Coach}: Ajuda a manter o fluxo de trabalho, facilitando as retrospectivas, as reuniões de planejamento do ciclo, organizar a equipe de desenvolvimento e garantir a entrega prevista do ciclo. 
 	
-	\item \textbf{Product Owner}: Responsável pelo backlog e define prioridades das histórias, se comunicando diretamente com os stakeholders e apresentar ao cliente o andar do desenvolvimento do software. 
+	\item \textbf{Product Owner}:\cite{scrumguide} Responsável pelo backlog e define prioridades das histórias, se comunicando diretamente com os stakeholders e apresentar ao cliente o andar do desenvolvimento do software. 
 	
 	\item \textbf{Squad}: Equipe de desenvolvimento, quem vai codificar a solução.
 	
@@ -274,10 +269,8 @@ Os artefatos gerados durante o processo são de sua maioria relatórios para col
 E para finalizar podemos citar como artefato a versão nova do sistema desenvolvido, a cada entrega que for feita será alterado a versão do sistema e versionada.
 \subsection{Guidance}
 \subsubsection{Guidlines} 
-\paragraph{Material Desing}
-Utilizado para definir a componentização e padronização dos elementos visuais, o Material Design tem como principal característica o uso de metáforas visuais que auxiliam no reconhecimento do comportamento do sistema e aumentam a facilidade de uso do sistema. Toda a componentização se baseia em como se comportam materiais reais, como folhas sobrepostas, por exemplo.
-
-Acesso à documentação em: <https://material.io/>
+\paragraph{Material Design}
+Utilizado para definir a componentização e padronização dos elementos visuais, o Material Design\cite{materiald} tem como principal característica o uso de metáforas visuais que auxiliam no reconhecimento do comportamento do sistema e aumentam a facilidade de uso do sistema. Toda a componentização se baseia em como se comportam materiais reais, como folhas sobrepostas, por exemplo.
 
 \paragraph{SOLID Principles}
 Os princípios SOLID\cite{solid} é um conjunto de ideais a serem seguidos em um projeto de software com desenvolvimento orientado a objetos com o objetivo de gerar um software com maior qualidade, alta manutenibilidade e facilidade para testes. Estes princípios são:
@@ -318,6 +311,8 @@ Primeiramente temos uma interação constante entre Line Manager, P.O e Customer
 
 A segunda interação presente no processo trata-se do alinhamento dos Squads com o Line Manager e Product Owner para um feedback dos Squads, dos membros individualmente e do ciclo como um todo, pontos positivos, pontos negativos, o que se pode aproveitar ou não, coisas novas que foram testadas e demonstraram uma melhoria, ou algo que falhou durante o ciclo. Esta reunião serve como base para um histórico de aperfeiçoamento do processo ao longo das Iterações, a cada ciclo o processo deve ser refinado até atingir os níveis de desempenho desejados, isso não impede que novos métodos sejam testados; 
 \subsection{Iterações}
+Todo processo é uma iteração. Sendo um ciclo de vida cíclico por completo, o processo repete a fase de levantamento de requisitos até a fase de manutenção quantas vezes forem necessárias até a solução final estiver concluída.
+
 
 \subsection{Milestones}
 Em cada ciclo teremos todas as nossas fases do processo realizadas novamente, deste modo, para que não haja milestones desnecessários ou que possam tornar o processo confuso e/ou lento, foram definidos apenas dois marcos principais em nosso processo. O primeiro se dá ao fato de Definir o Backlog, pois esta tarefa irá definir tudo que será utilizado nas fases e tarefas posteriores, ou seja, com um backlog definido em mãos temos o conteúdo necessário para prosseguir no processo e uma informação para ser comparada com a entrega. 
@@ -328,7 +323,7 @@ Os instrumentos recomendados para execução desse processo são:
 \begin{itemize}
 	\item \textbf{Kanban:} Utilizar algum software que implementa a ideia de Kanban ou post-its para organização das ideias e ciclos.
 	\item \textbf{Versionador de Documentos:} Os artefatos gerados durante o ciclo serão atualizados constantemente, é recomendado o uso de algum versionador de documentos como SharePoint; 
-	\item \textbf{Versionador de Código:} Todo código-fonte gerado durante o desenvolvimento deve ser versionado para manter um controle de entrega por ciclo, pode ser considerado opções como GIT e SVN.
+	\item \textbf{Versionador de Código:} Todo código-fonte gerado durante o desenvolvimento deve ser versionado para manter um controle de entrega por ciclo, pode ser considerado opções como GIT \cite{git} e SVN \cite{svn}.
 \end{itemize}	
 
 \subsection{Feedback}
@@ -351,87 +346,35 @@ Em certos modelos de processo de software apenas parte do ciclo de vida é cícl
 Os benefícios de uma desativação menos agressiva vão além do tempo poupado e menor prejuízo relacionados aos custos. Em cada ciclo temos documentações relacionadas aos artefatos, versionamentos e informação gerada através dos feedbacks. Ou seja, mesmo após um acontecimento inesperado ou negativo, os dados coletados de ciclos prévios irão enriquecer de forma positiva a base histórica da empresa que implementa o processo. 
 
 
+\section{Métricas e Parâmetros de Monitoramento}
+
+
+
+\section{Modelos de Qualidade}
+
+\section{Histórico}
+
+
+\section{Melhora Contínua}
+Com os artefatos gerados durante todo o processo (Relatórios negativos/positivos do ciclo) o Agile Coach analisa esses documentos e tem o objetivo de entender tudo que deu errado analisando o relatório negativo para que não se repeta nos próximos projetos e absorve tudo que foi essencial para conseguir entregar a solução final analisando o relatório positivo. O Line Manager também terá acesso a esses documentos e ao final do projeto ele montará um plano de ação para poder melhorar o processo como um todo, baseado nas experiências anteriores.
+
+
+\section{BPMN}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\textwidth]{bpmn}
+	\caption{Business Process Model and Notation do Processo BJR}
+	\label{bpmn}
+\end{figure}
+
 \clearpage
-\section{Referências Bibliograficas}
+\section{Referências}
 \begingroup
 \renewcommand{\section}[2]{}
-Utilize o mendley, o jabref ou diretamente o bibtex para gerenciar suas referências biliográficas. As referências são criadas automaticamente de acordo com o uso no texto.
-
-Exemplo: Redes de computadores, segundo \cite{scrumguide} é considerada..... Já \cite{leia77} apresenta uma versão...
-
-Analisando os pressupostos de \cite{Buerger1989} e \cite{leia77} concluimos que....
 
 \bibliographystyle{ieeetr}
 \bibliography{referencias/referencias} 
 \endgroup
 
-
-
-\section{Elementos textuais - Alguns exemplos}
-
-Esta seção apresenta exemplos de elementos textuais. \textbf{Remova-a da versão final do texto}.
-
-
-\subsection{Colocar elementos em itens}
-
-Texto antes da lista
-
-\begin{itemize}
-	\item First item in a list 
-	\item Second item in a list 
-	\item Third item in a list
-\end{itemize}
-
-\subsubsection{Uma subseção de terceiro nivel}
-
-Exemplo de uma subseção
-
-\subsection{Tabelas}
-
-Utilize o site http://www.tablesgenerator.com/ para elaborar as tabelas de seu trabalho.
-Para adicionar uma tabela utilize: a tag input, passando o arquivo da tabela como parametro
-
-\input{tab2}
-
-Dentro do arquivo você deve definir o label e pode utilizá-lo para referenciar. Exemplo:
-Na tab \ref{tab2} temos a relação de ....
-
-
-Você também pode modificar a tabela manualmente, incluindo, por exemplo h! dentro de sua definição. Veja no exemplo tab2.tex
-
-\subsection{Figuras}
-
-As figuras podem ser no formato PDF, JPG, PNG. Você pode referenciá-las da mesma maneira que tabelas. Exemplo: A figura \ref{fig1} apresenta.....
-
-Não se preocupe o local em que a figura será renderizada em seu texto. Preocupe-se em criar referência para ela, ou seja, toda figura e tabela deve conter pelo menos uma referência no texto.
-
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{fig1}
-\caption{Exemplo de figura com escala horizontal}
-\label{fig1}
-\end{figure}
-
-
-\begin{figure}
-	\centering
-	\includegraphics[]{fig2}
-	\caption{Exemplo de figura sem escala}
-	\label{fig2}
-\end{figure}
-
-Você pode rotacionar figuras também. Para isso utilize o parâmetro angle=-90. Repare que a escala da figura foi modificada pelo parametro height. Você também pode utilizar scale
-
-\begin{figure}
-	\centering
-	\includegraphics[height=\textwidth,angle=-90]{fig3}
-	\caption{Exemplo de figura rotacionada}
-	\label{fig3}
-\end{figure}
-
-
-%% ***********************************************************************
-%% === ate aqui    =====  ================================================
-%% ***********************************************************************
 
 \end{document}
